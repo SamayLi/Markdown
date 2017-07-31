@@ -4,7 +4,7 @@ ApplicationPackageManager -> PackageManagerService: grantRuntimePermission
 
 PackageManagerService -> PermissionsState: grantRuntimePermission
 PermissionsState -> PermissionsState: grant
-note right: 这个方法赋予权限，写入到
+note right: 赋予权限
 PermissionsState -> PermissionsState:computeGids
 note right:根据赋予权限，将对应的gid赋予给app
 @enduml
