@@ -1,0 +1,11 @@
+@startuml
+actor User
+User-> AlarmManager:set
+AlarmManager -> AlarmManager: setImp
+
+AlarmManager -> AlarmManagerService: set
+AlarmManagerService -> AlarmManagerService: setImpl
+AlarmManagerService -> AlarmManagerService: setImplLocked
+AlarmManagerService -> AlarmManagerService: setImplLocked
+AlarmManagerService -> AlarmManagerService: addBatchLocked
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+AlarmThread -> AlarmThread: run
+AlarmThread -> AlarmManagerService: deliverAlarmsLocked
+AlarmManagerService -> DeliveryTracker: deliverLocked
+DeliveryTracker -> PendingIntent: send
+PendingIntent -> ActivityManagerService:sendIntentSender
+ActivityManagerService ->PendingIntentRecord:sendWithResult
+PendingIntentRecord->PendingIntentRecord:sendInner
+PendingIntentRecord->ActivityManangerServicee:启动Activity，Service，receiver
+@enduml
