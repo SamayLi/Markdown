@@ -1,0 +1,13 @@
+@startuml
+PackageManagerService -> PackageManagerService: scanDirTracedLI
+PackageManagerService -> PackageManagerService: scanDirLI
+PackageManagerService -> PackageManagerService: scanPackageTracedLI
+PackageManagerService -> PackageManagerService: scanPackageLI
+PackageManagerService -> PackageManagerService: scanPackageLI
+PackageManagerService -> PackageManagerService: scanPackageInternalLI
+PackageManagerService -> PackageManagerService: scanPackageLI
+PackageManagerService -> PackageManagerService: scanPackageDirtyLI
+PackageManagerService -> Settings: getPackageLPw
+Settings -> Settings:getPackageLPw
+Settings -> Settings:newUserIdLPw
+@enduml
