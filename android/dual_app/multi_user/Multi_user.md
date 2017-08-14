@@ -1375,3 +1375,8 @@ void finishRemoveUser(final int userHandle) {
         updateUserIds();
     }
 ```
+参考资料:
+
+1.http://www.heqiangfly.com/2017/03/06/android-source-code-analysis-usermanager/
+
+2.http://gityuan.com/2016/11/20/user_manager/
